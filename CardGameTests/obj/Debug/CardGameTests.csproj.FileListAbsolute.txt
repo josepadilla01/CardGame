@@ -1,0 +1,16 @@
+C:\Users\wicho\source\repos\CardGame\CardGameTests\obj\Debug\CardGameTests.csprojResolveAssemblyReference.cache
+C:\Users\wicho\source\repos\CardGame\CardGameTests\obj\Debug\CardGameTests.csproj.CoreCompileInputs.cache
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\CardGameTests.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\CardGameTests.pdb
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\CardGame.exe
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\CardGame.pdb
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\CardGame.exe.config
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\wicho\source\repos\CardGame\CardGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\wicho\source\repos\CardGame\CardGameTests\obj\Debug\CardGameTests.dll
+C:\Users\wicho\source\repos\CardGame\CardGameTests\obj\Debug\CardGameTests.pdb

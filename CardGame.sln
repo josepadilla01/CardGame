@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame", "CardGame\CardGame.csproj", "{13117C63-ABD2-43B3-9F8F-A798E66C3402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameTests", "CardGameTests\CardGameTests.csproj", "{01EBF6AC-FAA7-44B0-9471-E3A5EA3D27FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13117C63-ABD2-43B3-9F8F-A798E66C3402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13117C63-ABD2-43B3-9F8F-A798E66C3402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13117C63-ABD2-43B3-9F8F-A798E66C3402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13117C63-ABD2-43B3-9F8F-A798E66C3402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01EBF6AC-FAA7-44B0-9471-E3A5EA3D27FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01EBF6AC-FAA7-44B0-9471-E3A5EA3D27FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01EBF6AC-FAA7-44B0-9471-E3A5EA3D27FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01EBF6AC-FAA7-44B0-9471-E3A5EA3D27FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBAFA4E5-6019-4B23-815F-4BE492B5D7CF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+C:\Users\Jose\source\repos\CardGame\CardGame\obj\Debug\CardGame.csprojResolveAssemblyReference.cache
+C:\Users\Jose\source\repos\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\CardGame\CardGame\bin\Debug\CardGame.exe.config
+C:\Users\Jose\source\repos\CardGame\CardGame\bin\Debug\CardGame.exe
+C:\Users\Jose\source\repos\CardGame\CardGame\bin\Debug\CardGame.pdb
+C:\Users\Jose\source\repos\CardGame\CardGame\obj\Debug\CardGame.exe
+C:\Users\Jose\source\repos\CardGame\CardGame\obj\Debug\CardGame.pdb
+C:\Users\wicho\source\repos\CardGame\CardGame\bin\Debug\CardGame.exe.config
+C:\Users\wicho\source\repos\CardGame\CardGame\bin\Debug\CardGame.exe
+C:\Users\wicho\source\repos\CardGame\CardGame\bin\Debug\CardGame.pdb
+C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.exe
+C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.pdb
+C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.csprojResolveAssemblyReference.cache
