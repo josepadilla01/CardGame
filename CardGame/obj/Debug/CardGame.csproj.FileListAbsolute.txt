@@ -12,3 +12,10 @@ C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreComp
 C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.exe
 C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.pdb
 C:\Users\wicho\source\repos\CardGame\CardGame\obj\Debug\CardGame.csprojResolveAssemblyReference.cache
+E:\Repositories\CardGame\CardGame\bin\Debug\CardGame.exe.config
+E:\Repositories\CardGame\CardGame\bin\Debug\CardGame.exe
+E:\Repositories\CardGame\CardGame\bin\Debug\CardGame.pdb
+E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.csprojResolveAssemblyReference.cache
+E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.exe
+E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.pdb
