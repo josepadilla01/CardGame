@@ -11,9 +11,11 @@ namespace CardGame
     public class Game
     {
         private Deck mainDeck;
+        private List<Card> discardPile;
         private Hand p1_hand;
         private Hand p2_hand;
         int NUM_CARDS;
+        Player[] players = new Player[2];
 
         Card cardTest;
         //declare player variables
@@ -49,26 +51,27 @@ namespace CardGame
 
         }
 
+        public void Play()
+        {
+            Setup();
+
+
+
+        }
+
         public void Setup()
         {
             //Setup all objects here
             mainDeck = new Deck();
+            discardPile = new List<Card>();
             p1_hand = new Hand();
             p2_hand = new Hand();
-            //set up players
+            players[0] = new Player(p1_hand);
+            players[1] = new Player(p2_hand);
 
             mainDeck.Shuffle();
 
             Deal();
-
-            cardTest = mainDeck.Draw();
-
-            //test Replace
-            p1_hand.Replace(5, cardTest);
-
-            Console.WriteLine("{0}{1}", cardTest.Suit, cardTest.Value);
-            Console.WriteLine("{0}{1}", p1_hand.Peek(5).Suit, p1_hand.Peek(5).Value);
-
         }
 
         private void Deal()
@@ -93,11 +96,34 @@ namespace CardGame
         public bool Turn()
         {
             //get the right player
+            int count = 0;
+            Player player = players[count % 2];
+            
+
             //player:: choose card
+
+
             //get card from hand
             //player::choose suit
             //compare
 
+            //Draw a card
+            if (player.ChooseDrawDiscard() == true)
+            {
+                drawnCard = mainDeck.Draw();
+            }
+            else
+            {
+                if (discardPile.Count == 0)
+                {
+                    drawnCard = mainDeck.Draw();
+                }
+                else
+                {
+                    drawnCard = discardPile[0];
+                    discardPile.RemoveAt(0);
+                }
+            }
 
             return true;
         }
@@ -106,14 +132,18 @@ namespace CardGame
     //======================================PLAYER CLASS=============================================//
     public class Player
     {
-        public Player()
-        {
+        Random rnd = new Random();
+        private Hand hand;
 
+        public Player(Hand playerHand)
+        {
+            hand = playerHand;
         }
 
+        //Chooses to either draw from the deck (true)
+        //or draw from discard pile (false)
         public bool ChooseDrawDiscard()
         {
-            Random rnd = new Random();
             int probability = rnd.Next(0, 100);
 
             if (probability <= 65)
@@ -122,16 +152,57 @@ namespace CardGame
                 return false;
         }
 
-        public bool ChooseReplace()
+        public int ChooseReplace(Hand playerHand)
         {
-            Random rnd = new Random();
+            int probability = rnd.Next(0, 1);
+            bool cardFace = ChooseFaceUpOrDown();
+
+            int cardPosition = ChooseCard(cardFace, playerHand);
+
+            return cardPosition;
+
+        }
+
+        public bool ChooseFaceUpOrDown()
+        {
             int probability = rnd.Next(0, 100);
 
-            if (probability <= 65)
-                return true;
+            //true for face up
+            //false for face down
+            bool face = false;
+
+            //Choose a facedown or faceup card, with a bias
+            //to choose a facedown card.
+            if (probability <= 70)
+                return face;
             else
-                return false;
+                face = true;
+
+            return face;
         }
+
+        public int ChooseCard(bool cardFace, Hand playerHand)
+        {
+            
+            int cardPosition = rnd.Next(0,9);
+
+            //search through the hand for a card that is either facedown or faceup,
+            //depending on the value of "cardFace"
+           while(true)
+            {
+                //look at a random position in the hand
+                if (playerHand.Peek(cardPosition).FaceUp == cardFace)
+                {
+                    return cardPosition;
+                }
+                else
+                    cardPosition = rnd.Next(0, 9);
+
+            }
+
+        }
+
+    
     }
 
     //=========================================HAND CLASS==============================================//
