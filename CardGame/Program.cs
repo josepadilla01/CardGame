@@ -42,7 +42,7 @@ namespace CardGame
         //	Console.Write("{0}{1}  ", p2_hand.Peek(i).Suit, p2_hand.Peek(i).Value);
         //}
 
-
+        //==========================================GAME CLASS====================================//
         public Game()
         {
             
@@ -102,6 +102,38 @@ namespace CardGame
             return true;
         }
     }
+
+    //======================================PLAYER CLASS=============================================//
+    public class Player
+    {
+        public Player()
+        {
+
+        }
+
+        public bool ChooseDrawDiscard()
+        {
+            Random rnd = new Random();
+            int probability = rnd.Next(0, 100);
+
+            if (probability <= 65)
+                return true;
+            else
+                return false;
+        }
+
+        public bool ChooseReplace()
+        {
+            Random rnd = new Random();
+            int probability = rnd.Next(0, 100);
+
+            if (probability <= 65)
+                return true;
+            else
+                return false;
+        }
+    }
+
     //=========================================HAND CLASS==============================================//
     public class Hand
     {
