@@ -53,9 +53,27 @@ namespace CardGame
 
         public void Play()
         {
+            //set up objects
             Setup();
+            //Shuffle the deck
+            mainDeck.Shuffle();
+            //Deal 9 cards to each player
+            Deal();
 
+            //get the right player
+            int count = 0;
+            int playerChoice;
 
+            //Add a card to the discard pile to initialize it.
+            //Set its faceup value to true.  NOTE: All cards in discard pile
+            //are face up.
+
+            //Set up logic to turn 3 cards face up per player
+
+            while (Turn())
+            {
+                
+            }
 
         }
 
@@ -68,10 +86,6 @@ namespace CardGame
             p2_hand = new Hand();
             players[0] = new Player(p1_hand);
             players[1] = new Player(p2_hand);
-
-            mainDeck.Shuffle();
-
-            Deal();
         }
 
         private void Deal()
@@ -93,37 +107,46 @@ namespace CardGame
             }
         }
 
-        public bool Turn()
+        public bool Turn(Player player)
         {
-            //get the right player
-            int count = 0;
-            Player player = players[count % 2];
+            bool flag = true;
+            int cardPosition;
+            Card drawnCard;
             
-
-            //player:: choose card
-
-
-            //get card from hand
-            //player::choose suit
-            //compare
-
-            //Draw a card
+            //Choose whether to draw from main deck or discard pile
             if (player.ChooseDrawDiscard() == true)
             {
                 drawnCard = mainDeck.Draw();
             }
             else
             {
+                //Error check.  If drawing from discard pile, but discard pile is empty...
                 if (discardPile.Count == 0)
                 {
+                    //then draw from the main deck instead
                     drawnCard = mainDeck.Draw();
                 }
                 else
                 {
+                    //if the discard pile is not empty, then draw
+                    //from it and remove the card.
                     drawnCard = discardPile[0];
                     discardPile.RemoveAt(0);
                 }
             }
+
+            /*
+             * Look at the drawn card and replace any card(face down or face up) in the hand. 
+             * The new card is face up, the replaced card is added to
+             * the top of the discard pile(face up).
+            */
+
+            //get the card position first
+            cardPosition = player.ChooseReplace();
+            //replace card at "cardPosition" with the card that was drawn
+            player
+            
+            
 
             return true;
         }
@@ -133,11 +156,10 @@ namespace CardGame
     public class Player
     {
         Random rnd = new Random();
-        private Hand hand;
 
         public Player(Hand playerHand)
         {
-            hand = playerHand;
+     
         }
 
         //Chooses to either draw from the deck (true)
@@ -152,16 +174,18 @@ namespace CardGame
                 return false;
         }
 
-        public int ChooseReplace(Hand playerHand)
+
+        public int ChooseReplace()
         {
-            int probability = rnd.Next(0, 1);
+            //keeps track of whether to choose a faceup or facedown
             bool cardFace = ChooseFaceUpOrDown();
 
-            int cardPosition = ChooseCard(cardFace, playerHand);
+            int cardPosition = ChooseCard(cardFace);
 
             return cardPosition;
 
         }
+
 
         public bool ChooseFaceUpOrDown()
         {
@@ -191,17 +215,15 @@ namespace CardGame
            while(true)
             {
                 //look at a random position in the hand
-                if (playerHand.Peek(cardPosition).FaceUp == cardFace)
+                if (hand.Peek(cardPosition).FaceUp == cardFace)
                 {
                     return cardPosition;
                 }
                 else
                     cardPosition = rnd.Next(0, 9);
-
             }
 
         }
-
     
     }
 
@@ -344,7 +366,7 @@ namespace CardGame
             //Tests
             Game newGame = new Game();
 
-            newGame.Setup();
+            newGame.Play();
 
         }
     }
