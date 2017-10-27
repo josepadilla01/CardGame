@@ -19,3 +19,10 @@ E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.csprojResolveAssemblyRefere
 E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
 E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.exe
 E:\Repositories\CardGame\CardGame\obj\Debug\CardGame.pdb
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\bin\Debug\CardGame.exe.config
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\bin\Debug\CardGame.exe
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\bin\Debug\CardGame.pdb
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\obj\Debug\CardGame.exe
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\obj\Debug\CardGame.pdb
+C:\Users\wicho\OneDrive\Documents\GitHub\CardGame\CardGame\obj\Debug\CardGame.csprojResolveAssemblyReference.cache
